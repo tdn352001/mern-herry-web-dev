@@ -1,0 +1,62 @@
+
+// Đăng ký
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username": "tdn352001",
+    "password": "simond352001"
+}
+
+
+###
+//Đăng nhập
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username": "tdn352001",
+    "password": "simond352001"
+}
+###
+
+//Tạo bài viết
+POST http://localhost:5000/post/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTdjMWRhNmQyOTc4MDY2ZmU0ZDk3ZjEiLCJpYXQiOjE2MzU5OTQ0MzZ9.kUfFwPO_d-b13er-q49mxpSvn8QnZTP3I8eCxjz9v-U
+
+{
+    "title": "Android",
+    "description": "Angular Js",
+    "status": "LEARNDED",
+    "slug": "viet69.to"
+}
+
+###
+
+// Lấy thông tin bài viết
+GET http://localhost:5000/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTdjMWRhNmQyOTc4MDY2ZmU0ZDk3ZjEiLCJpYXQiOjE2MzU5OTQ0MzZ9.kUfFwPO_d-b13er-q49mxpSvn8QnZTP3I8eCxjz9v-U
+
+
+###
+// Cập nhật bài viết
+
+
+PUT http://localhost:5000/post/617c236e32968a7772fc3a1e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTdjMWRhNmQyOTc4MDY2ZmU0ZDk3ZjEiLCJpYXQiOjE2MzU1Mjc5MjZ9.zl21UZFLbDW5HW1aeX0s9ESEUnzKlZGGqHgrq1PcBT0
+
+{
+    "title": "Chào asdsad",
+    "description": "Tớ là siêu nhân",
+    "slug": "bai-1",
+}
+
+
+
+###
+// Xóa bài viết
+
+DELETE http://localhost:5000/post/61834b85bb29b1b9b5f1cb70
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTdjMWRhNmQyOTc4MDY2ZmU0ZDk3ZjEiLCJpYXQiOjE2MzU1Mjc5MjZ9.zl21UZFLbDW5HW1aeX0s9ESEUnzKlZGGqHgrq1PcBT0
