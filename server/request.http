@@ -4,7 +4,7 @@ POST https://frozen-crag-62359.herokuapp.com/auth/register
 Content-Type: application/json
 
 {
-    "username": "tdn352001",
+    "username": "tdn3520001",
     "password": "simond352001"
 }
 
