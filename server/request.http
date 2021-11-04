@@ -1,6 +1,6 @@
 
 // Đăng ký
-POST http://localhost:5000/auth/register
+POST https://frozen-crag-62359.herokuapp.com/auth/register
 Content-Type: application/json
 
 {
